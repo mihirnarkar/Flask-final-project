@@ -12,6 +12,14 @@ class Contact(db.Model):
     usersubject = db.Column(db.String(300), nullable=False)
     usermessage = db.Column(db.String(300), nullable=False)
 
+class User(db.Model):
+    userid = db.Column(db.Integer, primary_key=True)
+    userFname = db.Column(db.String(20), nullable=False)
+    userLname = db.Column(db.String(20), nullable=False)
+    userEmail = db.Column(db.String(50), unique=True, nullable=False)
+    userPass = db.Column(db.String(20), nullable=False)
+    userConfirmPass = db.Column(db.String(20), nullable=False)
+
 
 # defining a route
 @app.route("/") # decorator
@@ -34,8 +42,23 @@ def contact():
         db.session.add(entry)
         db.session.commit()
 
-
     return render_template('contact.html')
+
+@app.route("/user",methods=['GET','POST']) 
+def user():
+    if (request.method=='POST'):
+        userFname = request.form.get('fname')
+        userLname = request.form.get('lname')
+        userEmail = request.form.get('email')
+        userPass = request.form.get('pass')
+        userConfirmPass = request.form.get('cpass')
+
+        entry = User(userFname=userFname,userLname=userLname,userEmail=userEmail,userPass=userPass,userConfirmPass=userConfirmPass)
+        db.session.add(entry)
+        db.session.commit()
+
+    return render_template('signin.html')
+
 
 @app.route("/menu") 
 def menu():
