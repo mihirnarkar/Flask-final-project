@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+
+<div class="container-md my-5">
+
+  <h3 class="my-3">Create your own CakeZone account</h3>
+  <form>
+
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+      </div>
+    </div>
+
+    <input type="email" class="form-control my-3" placeholder="Enter email" aria-label="email">
+    <input type="password" class="form-control my-3" placeholder="Enter Password" aria-label="password">
+    <input type="password" class="form-control my-3" placeholder="Confirm Password" aria-label="confirmPassword">
+
+    <button type="submit" class="btn btn-primary" style="border-radius: 5px;">Create account</button>
+  </form>
+</div>
+
+
+{% endblock %}

@@ -12,6 +12,7 @@ class Contact(db.Model):
     usersubject = db.Column(db.String(300), nullable=False)
     usermessage = db.Column(db.String(300), nullable=False)
 
+
 # defining a route
 @app.route("/") # decorator
 def home():
@@ -51,5 +52,14 @@ def team():
 @app.route("/testimonial") 
 def testimonial():
     return render_template('testimonial.html')
+
+
+@app.route("/signin") 
+def signin():
+    return render_template('signin.html')
+
+@app.route("/signup") 
+def signup():
+    return render_template('signup.html')
 
 app.run(debug = True) 
