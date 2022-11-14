@@ -32,6 +32,14 @@ class User(db.Model):
     userPass = db.Column(db.String(20), nullable=False)
     userConfirmPass = db.Column(db.String(20), nullable=False)
 
+class Birthday_cakes(db.Model):
+    cake_id = db.Column(db.Integer, primary_key=True)
+    cake_name = db.Column(db.String(20), nullable=False)
+    cake_desc = db.Column(db.String(100), nullable=False)
+    cake_img = db.Column(db.String(50), unique=True, nullable=False)
+    cake_price = db.Column(db.Integer, nullable=False)
+    slug = db.Column(db.String(20), nullable=False)
+
 # defining a route
 @app.route("/") # decorator
 def home():
@@ -96,4 +104,10 @@ def signin():
 def signup():
     return render_template('signup.html',params=params)
 
-app.run(debug = True) 
+
+@app.route('/birthdaycake/<string:birthdaycake_slug>',methods=['GET'])
+def birthdaycake(birthdaycake_slug):
+    cake1 = Birthday_cakes.query.filter_by(slug=birthdaycake_slug).first()
+    return render_template('/birthday_cakes/birthday_cake1.html',cake1=cake1,params=params)
+
+app.run(debug = True)
