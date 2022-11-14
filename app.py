@@ -1,8 +1,20 @@
 from flask import Flask,render_template,request
 from flask_sqlalchemy import SQLAlchemy
+import json
+
+
+# Opening config.json file in read mode
+with open('config.json','r') as c:
+    params = json.load(c)["params"]
+
+local_server = params['local_server']
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:@localhost/cakeshopweb-app"
+if local_server:
+    app.config["SQLALCHEMY_DATABASE_URI"] = params['local_uri']
+else:
+    app.config["SQLALCHEMY_DATABASE_URI"] = params['prod_uri']
+
 db = SQLAlchemy(app)
 
 class Contact(db.Model):
@@ -20,15 +32,14 @@ class User(db.Model):
     userPass = db.Column(db.String(20), nullable=False)
     userConfirmPass = db.Column(db.String(20), nullable=False)
 
-
 # defining a route
 @app.route("/") # decorator
 def home():
-    return render_template('index.html')
+    return render_template('index.html',params=params)
 
 @app.route("/about") 
 def about():
-    return render_template('about.html')
+    return render_template('about.html',params=params)
 
 @app.route("/contact",methods=['GET','POST']) 
 def contact():
@@ -42,7 +53,7 @@ def contact():
         db.session.add(entry)
         db.session.commit()
 
-    return render_template('contact.html')
+    return render_template('contact.html',params=params)
 
 @app.route("/user",methods=['GET','POST']) 
 def user():
@@ -57,32 +68,32 @@ def user():
         db.session.add(entry)
         db.session.commit()
 
-    return render_template('signin.html')
+    return render_template('signin.html',params=params)
 
 
 @app.route("/menu") 
 def menu():
-    return render_template('menu.html')
+    return render_template('menu.html',params=params)
 
 @app.route("/service") 
 def service():
-    return render_template('service.html')
+    return render_template('service.html',params=params)
 
 @app.route("/team") 
 def team():
-    return render_template('team.html')
+    return render_template('team.html',params=params)
 
 @app.route("/testimonial") 
 def testimonial():
-    return render_template('testimonial.html')
+    return render_template('testimonial.html',params=params)
 
 
 @app.route("/signin") 
 def signin():
-    return render_template('signin.html')
+    return render_template('signin.html',params=params)
 
 @app.route("/signup") 
 def signup():
-    return render_template('signup.html')
+    return render_template('signup.html',params=params)
 
 app.run(debug = True) 

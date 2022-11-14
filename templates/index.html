@@ -7,9 +7,9 @@
         <div class="container py-5">
             <div class="row justify-content-start">
                 <div class="col-lg-8 text-center text-lg-start">
-                    <h1 class="font-secondary text-primary mb-4">Super Crispy</h1>
-                    <h1 class="display-1 text-uppercase text-white mb-4">CakeZone</h1>
-                    <h1 class="text-uppercase text-white">The Best Cake In London</h1>
+                    <h1 class="font-secondary text-primary mb-4">{{slider_header1}}</h1>
+                    <h1 class="display-1 text-uppercase text-white mb-4">{{website_header_name}}</h1>
+                    <h1 class="text-uppercase text-white">{{params['slider_header_desc']}}</h1>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
                         <a href="" class="btn btn-primary border-inner py-3 px-5 me-5">Read More</a>
                         <button type="button" class="btn-play" data-bs-toggle="modal"
@@ -51,7 +51,7 @@
         <div class="container">
             <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
                 <h2 class="text-primary font-secondary">About Us</h2>
-                <h1 class="display-4 text-uppercase">Welcome To CakeZone</h1>
+                <h1 class="display-4 text-uppercase">Welcome To {{params['website_header_name']}}</h1>
             </div>
             <div class="row gx-5">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
@@ -158,235 +158,200 @@
                         <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-3">Custom</a>
                     </li>
                 </ul>
+
+                <!-- Tab 1 of cake starts-->
                 <div class="tab-content">
                     <div id="tab-1" class="tab-pane fade show p-0 active">
                         <div class="row g-3">
+
                             <div class="col-lg-6">
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <img class="img-fluid" src="/static/img/birthday_cakes/cake_1.jpg" alt="" style="width: 160px; height: 174px;">
                                         <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
                                         <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <span>Ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolores.</span>
+                                        <button type="button" class="btn btn-primary col-5 my-2">Read More</button>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-lg-6">
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <img class="img-fluid" src="/static/img/birthday_cakes/cake_2.jpg" alt="" style="width: 160px; height: 174px;">
                                         <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
                                         <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <span>Ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolores.</span>
+                                        <button type="button" class="btn btn-primary col-5 my-2">Read More</button>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-lg-6">
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <img class="img-fluid" src="/static/img/birthday_cakes/cake_3.jpg" alt="" style="width: 160px; height: 174px;">
                                         <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
                                         <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <span>Ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolores.</span>
+                                        <button type="button" class="btn btn-primary col-5 my-2">Read More</button>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-lg-6">
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <img class="img-fluid" src="/static/img/birthday_cakes/cake_4.jpg" alt="" style="width: 160px; height: 174px;">
                                         <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
                                         <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <span>Ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolores.</span>
+                                        <button type="button" class="btn btn-primary col-5 my-2">Read More</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
+                    <!-- Tab 1 of cake ends -->
+
+
+                    <!-- Tab 2 of cake starts -->
                     <div id="tab-2" class="tab-pane fade show p-0">
                         <div class="row g-3">
                             <div class="col-lg-6">
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <img class="img-fluid" src="/static/img/wedding_cakes/cake_1.jpg" alt="" style="width: 160px; height: 174px;">
                                         <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
                                         <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <span>Ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolores.</span>
+                                        <button type="button" class="btn btn-primary col-5 my-2">Read More</button>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-lg-6">
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <img class="img-fluid" src="/static/img/wedding_cakes/cake_2.jpg" alt="" style="width: 160px; height: 174px;">
                                         <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
                                         <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <span>Ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolores.</span>
+                                        <button type="button" class="btn btn-primary col-5 my-2">Read More</button>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-lg-6">
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <img class="img-fluid" src="/static/img/wedding_cakes/cake_3.jpg" alt="" style="width: 160px; height: 174px;">
                                         <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
                                         <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <span>Ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolores.</span>
+                                        <button type="button" class="btn btn-primary col-5 my-2">Read More</button>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-lg-6">
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <img class="img-fluid" src="/static/img/wedding_cakes/cake_4.jpg" alt="" style="width: 160px; height: 174px;">
                                         <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
                                         <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <span>Ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolores.</span>
+                                        <button type="button" class="btn btn-primary col-5 my-2">Read More</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
+                    <!-- Tab 2 of cake ends -->
+
+                    <!-- Tab 3 of cake starts -->
                     <div id="tab-3" class="tab-pane fade show p-0">
                         <div class="row g-3">
                             <div class="col-lg-6">
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <img class="img-fluid" src="/static/img/custom_cakes/cake_1.jpg" alt="" style="width: 160px; height: 174px;">
                                         <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
                                         <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <span>Ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolores.</span>
+                                        <button type="button" class="btn btn-primary col-5 my-2">Read More</button>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-lg-6">
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <img class="img-fluid" src="/static/img/custom_cakes/cake_2.jpg" alt="" style="width: 160px; height: 174px;">
                                         <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
                                         <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <span>Ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolores.</span>
+                                        <button type="button" class="btn btn-primary col-5 my-2">Read More</button>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-lg-6">
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <img class="img-fluid" src="/static/img/custom_cakes/cake_3.jpg" alt="" style="width: 160px; height: 174px;">
                                         <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
                                         <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <span>Ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolores.</span>
+                                        <button type="button" class="btn btn-primary col-5 my-2">Read More</button>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-lg-6">
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <img class="img-fluid" src="/static/img/custom_cakes/cake_4.jpg" alt="" style="width: 160px; height: 174px;">
                                         <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
                                         <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <span>Ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolores.</span>
+                                        <button type="button" class="btn btn-primary col-5 my-2">Read More</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="/static/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
+
+
                         </div>
                     </div>
+                    <!-- Tab 3 of cake ends -->
+
                 </div>
             </div>
         </div>

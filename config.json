@@ -1,0 +1,11 @@
+{
+    "params":{
+        "local_server":"True",
+        "local_uri":"mysql://root:@localhost/cakeshopweb-app",
+        "prod_uri":"mysql://root:@localhost/cakeshopweb-app",
+        "website_header_name":"CakeZone",
+        "slider_header1":"Super Crispy",
+        "slider_header_desc":"The Best Cake In London"
+
+    }
+}
